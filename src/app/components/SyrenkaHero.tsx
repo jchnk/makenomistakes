@@ -151,7 +151,7 @@ export default function SyrenkaHero() {
             }}
           >
             {/* Left — Syrenka canvas */}
-            <div className="min-w-0 bg-[#2e7fd9] relative flex h-[160px] sm:h-auto sm:flex-1 lg:min-h-0 order-2 lg:order-none">
+            <div className="min-w-0 bg-[#2e7fd9] relative flex h-[200px] sm:h-auto sm:flex-1 lg:min-h-0">
               {/* @ts-expect-error - custom web component */}
               <mnm-syrenka-lens
                 palette="sky"
@@ -206,13 +206,8 @@ export default function SyrenkaHero() {
             {/* Right stub — signup */}
             <div
               id="signup"
-              className="flex-none w-full lg:w-[470px] bg-[#edf3fb] text-[#1b549e] lg:border-l-2 lg:border-dashed lg:border-[rgba(10,27,51,0.5)] box-border px-4 py-5 sm:px-6 sm:py-7 lg:px-[34px] lg:pt-7 lg:pb-6 flex flex-col order-1 lg:order-none"
+              className="flex-none w-full lg:w-[470px] bg-[#edf3fb] text-[#1b549e] lg:border-l-2 lg:border-dashed lg:border-[rgba(10,27,51,0.5)] box-border px-4 py-5 sm:px-6 sm:py-7 lg:px-[34px] lg:pt-7 lg:pb-6 flex flex-col"
             >
-              {/* AI HACKATHON label — mobile only */}
-              <div className="lg:hidden text-[11px] tracking-[0.26em] text-[#2e7fd9] font-bold mb-2">
-                AI HACKATHON · WARSZAWA
-              </div>
-
               {/* ADMIT ONE / TICKET NO */}
               <div className="flex justify-between text-[11px] tracking-[0.24em] font-medium">
                 <span>{s.admitOne}</span>
@@ -222,7 +217,7 @@ export default function SyrenkaHero() {
               </div>
 
               {/* Title */}
-              <div className="font-serif text-[38px] sm:text-[42px] lg:text-[62px] leading-[0.94] tracking-[-0.02em] mt-3 sm:mt-5 mb-3 sm:mb-4 text-[#0a1b33]">
+              <div className="font-serif text-[28px] sm:text-[42px] lg:text-[62px] leading-[0.94] tracking-[-0.02em] mt-4 sm:mt-5 mb-3 sm:mb-4 text-[#0a1b33]">
                 {s.title}
               </div>
 
