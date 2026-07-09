@@ -36,7 +36,7 @@ export const EVENT_CONFIG = {
   lumaRegistration: "[TBA]",
 
   // Share URL
-  shareUrl: "https://prelint.com/hackathon",
+  shareUrl: "https://make-no-mistakes-nine.vercel.app",
 } as const;
 
 // Jury / mentors — update as confirmed
