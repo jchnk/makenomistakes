@@ -29,8 +29,8 @@ export const EVENT_CONFIG = {
   contactX: "[TBA]",
 
   // Sponsor partnership link
-  partnershipUrl: "#",
-  partnerContentUrl: "#",
+  partnershipUrl: "mailto:paulina@ethwarsaw.dev",
+  partnerContentUrl: "mailto:paulina@ethwarsaw.dev",
 
   // Registration
   lumaRegistration: "[TBA]",
