@@ -85,8 +85,8 @@ export const strings = {
       en: "Relax. You’ll make it. You get six full days to hack.",
     },
     description: {
-      pl: "Make No Mistakes daje Ci sześć dni na zbudowanie czegoś dobrego: modelu, agenta, robota. To hackathon, który wychodzi poza szybki vibecoding — pracuj nad ulepszeniem AI, buduj nie pojedyncze funkcjonalności, ale pełne produkty, spróbuj sił w czymś bardziej czasochłonnym, jak trenowanie własnego modelu. Solo albo w zespole do 4 osób, z mentorami z najlepszych firm w branży i przestrzenią Kolektyw3 otwartą 24/7. Za darmo.",
-      en: "Make No Mistakes gives you six days to build something that actually works: a model, an agent, a robot. This hackathon goes beyond quick vibecoding — work on improving AI itself, build full products instead of single features, and take on something more time-consuming, like training your own model. Solo or in a team of up to 4, with mentors from the industry’s best and the Kolektyw3 space open 24/7. Free to join.",
+      pl: "Make No Mistakes daje Ci sześć dni na zbudowanie czegoś dobrego: modelu, agenta, robota. To hackathon, który wychodzi poza szybki vibecoding: pracuj nad ulepszeniem AI, buduj pełne produkty (nie pojedyncze funkcje), spróbuj sił w czymś bardziej czasochłonnym, jak trenowanie własnego modelu. Solo albo w zespole do 4 osób, z mentorami z Vercela, Anthropic i ElevenLabs i przestrzenią Kolektyw3 otwartą 24/7. Za darmo.",
+      en: "Make No Mistakes gives you six days to build something that actually works: a model, an agent, a robot. This hackathon goes beyond quick vibecoding: work on improving AI itself, build full products instead of single features, and take on something more time-consuming, like training your own model. Solo or in a team of up to 4, with mentors from Vercel, Anthropic, and ElevenLabs and the Kolektyw3 space open 24/7. Free to join.",
     },
     stats: [
       { value: "6", label: { pl: "DNI HACKOWANIA", en: "DAYS OF HACKING" } },
@@ -100,8 +100,8 @@ export const strings = {
   tracks: {
     sectionLabel: { pl: "02 / TRACKI", en: "02 / TRACKS" },
     heading: {
-      pl: "Cztery różnorodne kategorie.",
-      en: "Four different tracks.",
+      pl: "Cztery kategorie.",
+      en: "Four tracks.",
     },
     prizesNote: { pl: "NAGRODY: [TBA] PER TRACK", en: "PRIZES: [TBA] PER TRACK" },
     items: [
@@ -109,8 +109,8 @@ export const strings = {
         num: "01",
         name: "AI-Native Software & Self-Improving Agents",
         desc: {
-          pl: "Agenci, którzy przejmują cały workflow — i systemy, które same się ulepszają. MCP jako domyślna infrastruktura.",
-          en: "Agents that own an entire workflow — and systems that improve themselves. MCP as default plumbing.",
+          pl: "Agenci, którzy przejmują cały workflow, i systemy, które same się ulepszają. MCP jako domyślna infrastruktura.",
+          en: "Agents that own an entire workflow, and systems that improve themselves. MCP as default plumbing.",
         },
         judgedOn: "success rate across ≥50 runs · real task completion · production-shaped architecture",
       },
@@ -118,8 +118,8 @@ export const strings = {
         num: "02",
         name: "Local & On-Device AI",
         desc: {
-          pl: "AI, które działa tam, gdzie jest użytkownik — laptop, telefon, Raspberry Pi. Offline, prywatnie, zero kosztu per token.",
-          en: "AI that runs where the user is — laptop, phone, Raspberry Pi. Offline, private, zero cost per token.",
+          pl: "AI, które działa tam, gdzie jest użytkownik: laptop, telefon, Raspberry Pi. Offline, prywatnie, zero kosztu per token.",
+          en: "AI that runs where the user is: laptop, phone, Raspberry Pi. Offline, private, zero cost per token.",
         },
         judgedOn: "runs locally end-to-end · evals vs. cloud · latency & footprint · privacy",
       },
@@ -136,8 +136,8 @@ export const strings = {
         num: "04",
         name: "Model Training: Fine-tuning & Distillation",
         desc: {
-          pl: "Naucz model czegoś, czego nie umiał — niech GLM (albo coś mniejszego) analizuje DNA albo czyta orzeczenia sądowe. Mały i wyspecjalizowany bije duży i ogólny.",
-          en: "Teach a model something it couldn’t do — make GLM (or something smaller) analyze DNA or read court rulings. Small and specialized beats big and generic.",
+          pl: "Naucz model czegoś, czego nie umiał: niech GLM (albo coś mniejszego) analizuje DNA albo czyta orzeczenia sądowe. Mały i wyspecjalizowany bije duży i ogólny.",
+          en: "Teach a model something it couldn’t do: make GLM (or something smaller) analyze DNA or read court rulings. Small and specialized beats big and generic.",
         },
         judgedOn: "eval-proven capability gain vs. base model · data work · size/cost efficiency · reproducible recipe",
       },
@@ -179,8 +179,8 @@ export const strings = {
     ],
     hoursNote: { pl: "GODZINY: [TBA]", en: "HOURS: [TBA]" },
     workshopNote: {
-      pl: "Warsztaty pon–śr częściowo otwarte dla nie-hackerów — limitowane miejsca.",
-      en: "Mon–Wed workshops partially open to non-hackers — limited spots.",
+      pl: "Warsztaty pon–śr częściowo otwarte dla nie-hackerów, limitowane miejsca.",
+      en: "Mon–Wed workshops partially open to non-hackers, limited spots.",
     },
     workshopCta: {
       pl: "Zapisz się na warsztaty →",
