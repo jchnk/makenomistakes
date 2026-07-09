@@ -124,20 +124,21 @@ export default function SyrenkaHero() {
   return (
     <header
       id="top"
-      className="px-6 pt-12 pb-7 flex justify-center md:px-12"
+      className="px-3 pt-6 pb-5 flex justify-center sm:px-6 md:px-12 sm:pt-12 sm:pb-7"
     >
       <div className="w-full max-w-[1240px]">
         {/* Outer dark frame with clipped corners */}
         <div
-          className="bg-[#0a1b33] p-6 box-border"
+          className="bg-[#0a1b33] p-3 sm:p-6 box-border [--corner:12px] sm:[--corner:22px]"
           style={{
             clipPath:
-              "polygon(22px 0, calc(100% - 22px) 0, 100% 22px, 100% calc(100% - 22px), calc(100% - 22px) 100%, 22px 100%, 0 calc(100% - 22px), 0 22px)",
+              "polygon(var(--corner) 0, calc(100% - var(--corner)) 0, 100% var(--corner), 100% calc(100% - var(--corner)), calc(100% - var(--corner)) 100%, var(--corner) 100%, 0 calc(100% - var(--corner)), 0 var(--corner))",
           }}
         >
           {/* Meta bar */}
-          <div className="flex justify-between items-center px-1.5 pt-4 text-[11.5px] tracking-[0.2em] text-[#a8cef5]">
-            <span>{s.metaLeft}</span>
+          <div className="flex justify-between items-center px-1.5 pt-2 sm:pt-4 text-[9px] sm:text-[11.5px] tracking-[0.14em] sm:tracking-[0.2em] text-[#a8cef5]">
+            <span className="hidden sm:inline">{s.metaLeft}</span>
+            <span className="sm:hidden">WARSAW · SEP 4–10, 2026</span>
             <span className="hidden sm:inline">{s.metaRight}</span>
           </div>
 
@@ -150,7 +151,7 @@ export default function SyrenkaHero() {
             }}
           >
             {/* Left — Syrenka canvas */}
-            <div className="flex-1 min-w-0 bg-[#2e7fd9] relative flex min-h-[300px] lg:min-h-0">
+            <div className="min-w-0 bg-[#2e7fd9] relative flex h-[160px] sm:h-auto sm:flex-1 lg:min-h-0 order-2 lg:order-none">
               {/* @ts-expect-error - custom web component */}
               <mnm-syrenka-lens
                 palette="sky"
@@ -205,8 +206,13 @@ export default function SyrenkaHero() {
             {/* Right stub — signup */}
             <div
               id="signup"
-              className="flex-none w-full lg:w-[470px] bg-[#edf3fb] text-[#1b549e] lg:border-l-2 lg:border-dashed lg:border-[rgba(10,27,51,0.5)] box-border px-6 py-7 lg:px-[34px] lg:pt-7 lg:pb-6 flex flex-col"
+              className="flex-none w-full lg:w-[470px] bg-[#edf3fb] text-[#1b549e] lg:border-l-2 lg:border-dashed lg:border-[rgba(10,27,51,0.5)] box-border px-4 py-5 sm:px-6 sm:py-7 lg:px-[34px] lg:pt-7 lg:pb-6 flex flex-col order-1 lg:order-none"
             >
+              {/* AI HACKATHON label — mobile only */}
+              <div className="lg:hidden text-[11px] tracking-[0.26em] text-[#2e7fd9] font-bold mb-2">
+                AI HACKATHON · WARSZAWA
+              </div>
+
               {/* ADMIT ONE / TICKET NO */}
               <div className="flex justify-between text-[11px] tracking-[0.24em] font-medium">
                 <span>{s.admitOne}</span>
@@ -216,7 +222,7 @@ export default function SyrenkaHero() {
               </div>
 
               {/* Title */}
-              <div className="font-serif text-[42px] lg:text-[62px] leading-[0.94] tracking-[-0.02em] mt-5 mb-4 text-[#0a1b33]">
+              <div className="font-serif text-[38px] sm:text-[42px] lg:text-[62px] leading-[0.94] tracking-[-0.02em] mt-3 sm:mt-5 mb-3 sm:mb-4 text-[#0a1b33]">
                 {s.title}
               </div>
 
@@ -365,9 +371,7 @@ export default function SyrenkaHero() {
                   </a>
                   {/* Avatar link */}
                   <a
-                    href="#"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href="/avatar"
                     className="block text-center font-sans font-bold text-[13px] text-[#0a1b33] bg-white border-2 border-[#0a1b33] box-border no-underline py-[10px] hover:bg-[#a8cef5]"
                   >
                     {t(lang, s.avatarButton.pl, s.avatarButton.en)}
