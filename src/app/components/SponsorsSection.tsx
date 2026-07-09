@@ -110,6 +110,40 @@ export default function SponsorsSection({ lang }: { lang: Lang }) {
           </div>
         </div>
 
+        {/* Academic partners */}
+        <div className="flex flex-col gap-3">
+          <span className="text-[10.5px] tracking-[0.24em] text-[#6d93c4]">
+            {t(lang, s.academicLabel.pl, s.academicLabel.en)}
+          </span>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            {Array.from({ length: 4 }).map((_, i) => (
+              <div
+                key={i}
+                className="border-[1.5px] border-dashed border-[rgba(168,206,245,0.35)] h-[74px] flex items-center justify-center text-[11px] tracking-[0.18em] text-[#6d93c4]"
+              >
+                [TBA]
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Community partners */}
+        <div className="flex flex-col gap-3">
+          <span className="text-[10.5px] tracking-[0.24em] text-[#6d93c4]">
+            {t(lang, s.communityLabel.pl, s.communityLabel.en)}
+          </span>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            {Array.from({ length: 4 }).map((_, i) => (
+              <div
+                key={i}
+                className="border-[1.5px] border-dashed border-[rgba(168,206,245,0.35)] h-[74px] flex items-center justify-center text-[11px] tracking-[0.18em] text-[#6d93c4]"
+              >
+                [TBA]
+              </div>
+            ))}
+          </div>
+        </div>
+
         {/* Become a sponsor */}
         <div className="border-2 border-[#2e7fd9] bg-[rgba(46,127,217,0.1)] px-6 py-[30px] lg:px-[34px] grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-6 items-center">
           <div className="flex flex-col gap-2.5">

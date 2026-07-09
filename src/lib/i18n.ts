@@ -49,24 +49,36 @@ export const strings = {
     formNamePlaceholder: { pl: "Imię", en: "Name" },
     formSubmit: { pl: "Zapisz →", en: "Join →" },
     formNote: {
-      pl: "Rejestracja przez Luma [TBA]. Zbierz zespół 3–4 os. — pełne zespoły mają gwarantowane miejsca.",
-      en: "Registration via Luma [TBA]. Bring a team of 3–4 — full teams get guaranteed spots.",
+      pl: "Zbierz zespół 3–4 os., pełne zespoły mają gwarantowane miejsca.",
+      en: "Bring a team of 3–4, full teams get guaranteed spots.",
     },
     lumaButton: {
       pl: "Dokończ rejestrację na Luma →",
       en: "Complete registration on Luma →",
+    },
+    avatarButton: {
+      pl: "Stwórz swój awatar hackathonowy →",
+      en: "Create your hackathon avatar →",
+    },
+    successHeading: {
+      pl: "Prawie gotowe.",
+      en: "Almost there.",
+    },
+    successNote: {
+      pl: "Dokończ rejestrację na Luma, żeby potwierdzić miejsce.",
+      en: "Complete your registration on Luma to confirm your spot.",
     },
     shareHeading: "I’M HACKING AT",
     shareTitle: "Make No Mistakes · Warsaw",
     shareXButton: { pl: "Udostępnij na X", en: "Share on X" },
     shareLinkedIn: "LinkedIn",
     shareConfirmation: {
-      pl: "✓ Jesteś na liście — damy znać, gdy ruszy pełna rejestracja.",
-      en: "✓ You’re on the list — we’ll ping you when full registration opens.",
+      pl: "✓ Zapisano. Dokończ rejestrację na Luma, żeby potwierdzić miejsce.",
+      en: "✓ Signed up. Complete your Luma registration to confirm your spot.",
     },
     duplicateConfirmation: {
-      pl: "Już jesteś na liście ✓",
-      en: "You’re already on the list ✓",
+      pl: "Już jesteś na liście ✓ Dokończ rejestrację na Luma.",
+      en: "You’re already on the list ✓ Complete your Luma registration.",
     },
   },
 
@@ -222,6 +234,14 @@ export const strings = {
     becomeCta: {
       pl: "Porozmawiajmy o partnerstwie →",
       en: "Let’s talk partnership →",
+    },
+    academicLabel: {
+      pl: "PARTNERZY AKADEMICCY",
+      en: "ACADEMIC PARTNERS",
+    },
+    communityLabel: {
+      pl: "PARTNERZY SPOŁECZNI",
+      en: "COMMUNITY PARTNERS",
     },
   },
 

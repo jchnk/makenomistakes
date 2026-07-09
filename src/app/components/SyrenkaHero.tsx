@@ -344,16 +344,43 @@ export default function SyrenkaHero() {
                   </div>
                 </form>
               ) : (
-                <div className="mt-3.5 flex flex-col gap-2">
+                <div className="mt-3.5 flex flex-col gap-2.5">
+                  {/* Success heading */}
+                  <div className="flex flex-col gap-1">
+                    <span className="font-serif text-[24px] text-[#0a1b33]">
+                      {t(lang, s.successHeading.pl, s.successHeading.en)}
+                    </span>
+                    <span className="text-[12.5px] leading-[1.6] text-[#4a6c96]">
+                      {t(lang, s.successNote.pl, s.successNote.en)}
+                    </span>
+                  </div>
+                  {/* Luma CTA — primary */}
+                  <a
+                    href={lumaUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block text-center font-sans font-bold text-[14px] text-[#edf4fc] bg-[#2e7fd9] no-underline py-[13px] hover:bg-[#1b549e]"
+                  >
+                    {t(lang, s.lumaButton.pl, s.lumaButton.en)}
+                  </a>
+                  {/* Avatar link */}
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block text-center font-sans font-bold text-[13px] text-[#0a1b33] bg-white border-2 border-[#0a1b33] box-border no-underline py-[10px] hover:bg-[#a8cef5]"
+                  >
+                    {t(lang, s.avatarButton.pl, s.avatarButton.en)}
+                  </a>
                   {/* Share card */}
-                  <div className="border-2 border-[#2e7fd9] bg-[#0a1b33] text-[#edf3fb] px-4 py-3.5 flex flex-col gap-1">
+                  <div className="border-2 border-[#2e7fd9] bg-[#0a1b33] text-[#edf3fb] px-4 py-3 flex flex-col gap-1">
                     <span className="text-[9.5px] tracking-[0.22em] text-[#a8cef5]">
                       {s.shareHeading}
                     </span>
-                    <span className="font-serif text-[21px]">
+                    <span className="font-serif text-[18px]">
                       {s.shareTitle}
                     </span>
-                    <span className="text-[11.5px] text-[#a8cef5]">
+                    <span className="text-[11px] text-[#a8cef5]">
                       {shareName} · {track} · Sep 4–10
                     </span>
                   </div>
@@ -363,7 +390,7 @@ export default function SyrenkaHero() {
                       href={`https://twitter.com/intent/tweet?text=${shareText}&url=${shareUrl}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex-1 text-center font-sans font-bold text-[13px] text-[#edf4fc] bg-[#0a1b33] no-underline py-[11px] hover:bg-[#1b549e]"
+                      className="flex-1 text-center font-sans font-bold text-[12px] text-[#edf4fc] bg-[#0a1b33] no-underline py-[9px] hover:bg-[#1b549e]"
                     >
                       {t(lang, s.shareXButton.pl, s.shareXButton.en)}
                     </a>
@@ -371,19 +398,11 @@ export default function SyrenkaHero() {
                       href={`https://www.linkedin.com/sharing/share-offsite/?url=${shareUrl}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex-1 text-center font-sans font-bold text-[13px] text-[#0a1b33] bg-white border-2 border-[#0a1b33] box-border no-underline py-[9px] hover:bg-[#a8cef5]"
+                      className="flex-1 text-center font-sans font-bold text-[12px] text-[#0a1b33] bg-white border-2 border-[#0a1b33] box-border no-underline py-[7px] hover:bg-[#a8cef5]"
                     >
                       {s.shareLinkedIn}
                     </a>
                   </div>
-                  <a
-                    href={lumaUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block text-center font-sans font-bold text-[14px] text-[#edf4fc] bg-[#2e7fd9] no-underline py-[11px] hover:bg-[#1b549e]"
-                  >
-                    {t(lang, s.lumaButton.pl, s.lumaButton.en)}
-                  </a>
                   <div className="text-[10.5px] text-[#4a6c96]">
                     {status === "duplicate"
                       ? t(
