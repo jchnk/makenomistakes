@@ -21,6 +21,9 @@ export default function AgendaSection({ lang }: { lang: Lang }) {
           <h2 className="font-serif text-[32px] lg:text-[40px] font-normal m-0 tracking-[-0.01em]">
             {t(lang, s.heading.pl, s.heading.en)}
           </h2>
+          <span className="text-[13px] text-[#2e7fd9] font-bold">
+            {t(lang, s.hybridNote.pl, s.hybridNote.en)}
+          </span>
         </div>
 
         {/* Agenda rows */}

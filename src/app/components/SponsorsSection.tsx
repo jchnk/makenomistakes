@@ -22,26 +22,24 @@ export default function SponsorsSection({ lang }: { lang: Lang }) {
         </div>
 
         {/* Gold / Main Partner */}
-        <div className="border-2 border-[rgba(168,206,245,0.5)] px-[30px] py-[38px] flex flex-col gap-4 justify-center items-center">
+        <a
+          href="https://vercel.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="border-2 border-[rgba(168,206,245,0.5)] px-[30px] py-[38px] flex flex-col gap-4 justify-center items-center no-underline text-[#edf3fb] hover:border-[#a8cef5]"
+        >
           <span className="text-[10.5px] tracking-[0.24em] text-[#a8cef5]">
             {s.goldLabel}
           </span>
           <span className="flex items-center gap-3.5">
-            <span
-              className="inline-block"
-              style={{
-                width: 0,
-                height: 0,
-                borderLeft: "17px solid transparent",
-                borderRight: "17px solid transparent",
-                borderBottom: "29px solid #edf3fb",
-              }}
-            />
+            <svg width="26" height="22" viewBox="0 0 76 65" fill="none">
+              <path d="M37.5274 0L75.0548 65H0L37.5274 0Z" fill="#edf3fb" />
+            </svg>
             <span className="font-sans font-bold text-[42px] tracking-[-0.01em]">
               {s.goldName}
             </span>
           </span>
-        </div>
+        </a>
 
         {/* Organizers */}
         <div className="border-[1.5px] border-[rgba(168,206,245,0.4)] px-[30px] py-[26px] flex flex-col gap-3.5 justify-center items-center">
@@ -49,32 +47,23 @@ export default function SponsorsSection({ lang }: { lang: Lang }) {
             {t(lang, s.organizersLabel.pl, s.organizersLabel.en)}
           </span>
           <span className="flex items-center gap-4 flex-wrap justify-center">
-            {/* Prelint logo */}
-            <span className="flex items-center gap-[9px]">
-              <svg width="22" height="18" viewBox="0 0 32 26">
-                <path
-                  fill="#edf3fb"
-                  fillRule="evenodd"
-                  d="M10 24v-4.4C7.5 18 6 15.5 6 12.6 6 7.3 10.3 3 15.6 3h2.8C24.8 3 30 8.2 30 14.6V24h-5v-4h-9v4h-6zm3.2-16.6a1.7 1.7 0 1 0 0 3.4 1.7 1.7 0 0 0 0-3.4z"
-                />
-                <path
-                  fill="none"
-                  stroke="#edf3fb"
-                  strokeWidth="2.4"
-                  strokeLinecap="round"
-                  d="M7 11c-2.6.4-4.5 2.6-4.5 5.3 0 1.9.9 3.5 2.3 4.5"
-                />
-              </svg>
-              <span className="font-serif text-[24px]">prelint</span>
-            </span>
+            <a
+              href="https://prelint.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-[9px] no-underline text-[#edf3fb] hover:text-[#a8cef5]"
+            >
+              <span className="font-sans font-bold text-[24px] tracking-[-0.02em]">prelint</span>
+            </a>
             <span className="text-[#a8cef5]">&times;</span>
-            {/* Kolektyw3 logo */}
-            <span className="flex items-center gap-2">
-              <span className="border-2 border-[#a8cef5] px-[7px] py-[2px] font-bold text-[15px]">
-                K3
-              </span>
+            <a
+              href="https://kolektyw3.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 no-underline text-[#edf3fb] hover:text-[#a8cef5]"
+            >
               <span className="font-sans font-bold text-[20px]">KOLEKTYW3</span>
-            </span>
+            </a>
           </span>
         </div>
 

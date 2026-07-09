@@ -163,6 +163,10 @@ export const strings = {
       pl: "6 dni hackowania i warsztatów.",
       en: "6 days of hacking and workshops.",
     },
+    hybridNote: {
+      pl: "Format hybrydowy: hackuj onsite w Kolektyw3 lub zdalnie.",
+      en: "Hybrid format: hack onsite at Kolektyw3 or remotely.",
+    },
     rows: [
       {
         date: { pl: "Pt 4.09", en: "Fri, Sep 4" },
@@ -173,26 +177,50 @@ export const strings = {
         venue: "POLITECHNIKA WARSZAWSKA",
       },
       {
-        date: { pl: "Sb–Śr 5–9.09", en: "Sat–Wed, Sep 5–9" },
+        date: { pl: "Sb–Nd 5–6.09", en: "Sat–Sun, Sep 5–6" },
         desc: {
-          pl: "Hackowanie 24/7 · pon–śr dodatkowo warsztaty",
-          en: "Hacking 24/7 · Mon–Wed with workshops",
+          pl: "Hackowanie 24/7",
+          en: "Hacking 24/7",
         },
         venue: "KOLEKTYW3 (24/7)",
       },
       {
+        date: { pl: "Pn 7.09", en: "Mon, Sep 7" },
+        desc: {
+          pl: "Hackowanie + Track Workshop with Guest Speaker",
+          en: "Hacking + Track Workshop with Guest Speaker",
+        },
+        venue: "KOLEKTYW3",
+      },
+      {
+        date: { pl: "Wt 8.09", en: "Tue, Sep 8" },
+        desc: {
+          pl: "Hackowanie + Track Workshop with Guest Speaker",
+          en: "Hacking + Track Workshop with Guest Speaker",
+        },
+        venue: "KOLEKTYW3",
+      },
+      {
+        date: { pl: "Śr 9.09", en: "Wed, Sep 9" },
+        desc: {
+          pl: "Hackowanie + Track Workshop with Guest Speaker",
+          en: "Hacking + Track Workshop with Guest Speaker",
+        },
+        venue: "KOLEKTYW3",
+      },
+      {
         date: { pl: "Cz 10.09", en: "Thu, Sep 10" },
         desc: {
-          pl: "Demo Day — prezentacje, wyniki, zamknięcie · publiczne głosowanie People’s Choice",
-          en: "Demo Day — final pitches, winners, closing · public People’s Choice vote",
+          pl: "Demo Day: prezentacje, wyniki, zamknięcie",
+          en: "Demo Day: final pitches, results, closing",
         },
         venue: "POLITECHNIKA WARSZAWSKA",
       },
     ],
     hoursNote: { pl: "GODZINY: [TBA]", en: "HOURS: [TBA]" },
     workshopNote: {
-      pl: "Warsztaty pon–śr częściowo otwarte dla nie-hackerów, limitowane miejsca.",
-      en: "Mon–Wed workshops partially open to non-hackers, limited spots.",
+      pl: "Warsztaty częściowo otwarte dla nie-hackerów, limitowane miejsca.",
+      en: "Workshops partially open to non-hackers, limited spots.",
     },
     workshopCta: {
       pl: "Zapisz się na warsztaty →",
@@ -204,8 +232,8 @@ export const strings = {
   jury: {
     sectionLabel: { pl: "04 / JURY I MENTORZY", en: "04 / JUDGES & MENTORS" },
     heading: {
-      pl: "Ludzie, którzy sami wysyłają na produkcję.",
-      en: "People who ship to production themselves.",
+      pl: "Eksperci z firm, które budują AI.",
+      en: "Experts from the companies building AI.",
     },
     companies: "VERCEL · PRELINT · ANTHROPIC · ELEVENLABS · VC",
   },
@@ -219,12 +247,12 @@ export const strings = {
     silverLabel: "SILVER",
     bronzeLabel: "BRONZE",
     becomeHeading: {
-      pl: "Postaw swoje logo przed 200+ ludźmi, którzy naprawdę budują.",
-      en: "Put your logo in front of 200+ people who actually ship.",
+      pl: "Zostań sponsorem lub partnerem.",
+      en: "Become a sponsor or partner.",
     },
     becomeDescription: {
-      pl: "Make No Mistakes to tydzień, nie weekend — Twoja marka pracuje przez 7 dni: warsztaty, bounties w trackach, mentoring, demo day. Sponsorzy dostają własne bounty, slot warsztatowy, dostęp do zgłoszeń rekrutacyjnych i milestone’owy model rozliczeń. Tiery: Gold / Silver / Bronze + partnerstwa contentowe per track.",
-      en: "Make No Mistakes is a week, not a weekend — your brand works for 7 days: workshops, track bounties, mentoring, demo day. Sponsors get their own bounty, a workshop slot, access to hiring-ready builders, and milestone-based payouts. Tiers: Gold / Silver / Bronze + per-track content partnerships.",
+      pl: "Hackathon trwa tydzień. Sponsorzy mogą poprowadzić warsztat, wystawić bounty w swoim tracku i mieć dostęp do uczestników. Rozliczenie milestone’owe. Tiery: Gold / Silver / Bronze + partnerstwa per track.",
+      en: "The hackathon runs for a full week. Sponsors can host a workshop, set a bounty in their track, and connect with participants. Milestone-based billing. Tiers: Gold / Silver / Bronze + per-track partnerships.",
     },
     becomePartnerNote: {
       pl: "Chcesz być partnerem contentowym / community?",
@@ -261,6 +289,7 @@ export const strings = {
       pl: [
         { q: "Czy udział jest płatny?", a: "Nie, hackathon jest darmowy." },
         { q: "Kto może wziąć udział?", a: "Każdy, kto buduje z AI: devs, founderzy, model trainerzy, indie hackerzy." },
+        { q: "Czy trzeba być na miejscu?", a: "Nie, hackathon jest hybrydowy. Możesz hackować zdalnie lub onsite w Kolektyw3." },
         { q: "Gdzie hackuję w trakcie tygodnia?", a: "Kolektyw3 jest otwarte dla hackerów 24/7 przez cały tydzień." },
         { q: "Czy będzie jedzenie?", a: "Tak." },
         { q: "Czy mogę przyjść bez zespołu?", a: "Tak, team building jest częścią otwarcia." },
@@ -270,6 +299,7 @@ export const strings = {
       en: [
         { q: "Is it free?", a: "Yes, the hackathon is free." },
         { q: "Who can join?", a: "Anyone building with AI: devs, founders, model trainers, indie hackers." },
+        { q: "Do I need to be onsite?", a: "No, the hackathon is hybrid. You can hack remotely or onsite at Kolektyw3." },
         { q: "Where do I hack during the week?", a: "Kolektyw3 is open to hackers 24/7 all week." },
         { q: "Food?", a: "Yes." },
         { q: "Can I come solo?", a: "Yes, team building is part of the opening." },
