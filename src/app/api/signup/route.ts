@@ -7,6 +7,13 @@ function getSupabase() {
   return createClient(url, key);
 }
 
+const VALID_TRACKS = [
+  "AI-Native Software",
+  "Local & On-Device AI",
+  "Physical AI & Robotics",
+  "Model Training",
+];
+
 export async function POST(request: Request) {
   try {
     const supabase = getSupabase();
@@ -17,7 +24,11 @@ export async function POST(request: Request) {
       );
     }
 
-    const { email } = await request.json();
+    const { name, email, track } = await request.json();
+
+    if (!name || typeof name !== "string" || !name.trim()) {
+      return Response.json({ error: "Imię jest wymagane." }, { status: 400 });
+    }
 
     if (!email || typeof email !== "string") {
       return Response.json({ error: "Email jest wymagany." }, { status: 400 });
@@ -28,11 +39,18 @@ export async function POST(request: Request) {
       return Response.json({ error: "Nieprawidłowy email." }, { status: 400 });
     }
 
+    if (!track || !VALID_TRACKS.includes(track)) {
+      return Response.json({ error: "Nieprawidłowy track." }, { status: 400 });
+    }
+
     const userAgent = request.headers.get("user-agent") || undefined;
 
-    const { error } = await supabase
-      .from("signups")
-      .insert({ email: email.toLowerCase(), user_agent: userAgent });
+    const { error } = await supabase.from("signups").insert({
+      name: name.trim(),
+      email: email.toLowerCase(),
+      track,
+      user_agent: userAgent,
+    });
 
     if (error) {
       if (error.code === "23505") {

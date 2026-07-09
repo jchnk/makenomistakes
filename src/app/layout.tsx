@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Space_Grotesk, JetBrains_Mono } from "next/font/google";
+import { Space_Grotesk, JetBrains_Mono, DM_Serif_Display } from "next/font/google";
 import "./globals.css";
 
 const spaceGrotesk = Space_Grotesk({
@@ -9,15 +9,21 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 const jetbrainsMono = JetBrains_Mono({
-  subsets: ["latin"],
+  subsets: ["latin", "latin-ext"],
   variable: "--font-jetbrains-mono",
   weight: ["400", "500", "700"],
 });
 
+const dmSerifDisplay = DM_Serif_Display({
+  subsets: ["latin", "latin-ext"],
+  variable: "--font-dm-serif-display",
+  weight: "400",
+});
+
 export const metadata: Metadata = {
-  title: "Make No Mistakes — AI Hackathon",
+  title: "Make No Mistakes — AI Hackathon · Warsaw · Sep 4–10, 2026",
   description:
-    "36-godzinny hackathon AI dla tych, którzy budują precyzyjnie. Zero halucynacji, zero excusów — sam celny kod.",
+    "Tygodniowy hackathon AI w Warszawie. Buduj, trenuj, wdrażaj. 4–10 września 2026.",
 };
 
 export default function RootLayout({
@@ -28,9 +34,9 @@ export default function RootLayout({
   return (
     <html
       lang="pl"
-      className={`${spaceGrotesk.variable} ${jetbrainsMono.variable} h-full antialiased`}
+      className={`${spaceGrotesk.variable} ${jetbrainsMono.variable} ${dmSerifDisplay.variable} antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-[#e6eef6]">{children}</body>
+      <body className="min-h-screen flex flex-col">{children}</body>
     </html>
   );
 }

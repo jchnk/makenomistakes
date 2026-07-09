@@ -3,10 +3,56 @@
 @theme inline {
   --font-sans: var(--font-space-grotesk);
   --font-mono: var(--font-jetbrains-mono);
+  --font-serif: var(--font-dm-serif-display);
+
+  --color-ink: #0a1b33;
+  --color-primary: #2e7fd9;
+  --color-primary-hover: #1b549e;
+  --color-deep: #1b549e;
+  --color-light: #a8cef5;
+  --color-muted: #6d93c4;
+  --color-paper: #edf4fc;
+  --color-ticket: #edf3fb;
+  --color-helper: #4a6c96;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: #e6eef6;
-  color: #0a2a3a;
+  background: var(--color-paper);
+  color: var(--color-ink);
   font-family: var(--font-mono);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-primary);
+  color: var(--color-paper);
+}
+
+a {
+  color: var(--color-deep);
+}
+a:hover {
+  color: var(--color-primary);
+}
+
+/* Zero border-radius globally */
+*,
+*::before,
+*::after {
+  border-radius: 0 !important;
+}
+
+/* Pulsing dot animation for spots counter */
+@keyframes mnm-pulse {
+  0%,
+  100% {
+    opacity: 0.35;
+  }
+  50% {
+    opacity: 1;
+  }
 }
